@@ -1,0 +1,204 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container styles */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #68cb2a;
+}
+
+/* Link styles */
+.container a {
+    text-decoration: none;
+    color: #68cb2a;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #68cb2a;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container a:hover {
+    background: #68cb2a;
+    color: #fff;
+}
+
+/* Form and advanced settings styles */
+form, .advanced-settings {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+form p, .advanced-settings p {
+    margin-bottom: 10px;
+}
+
+form input[type="file"], form input[type="submit"], .advanced-settings input[type="text"], .advanced-settings input[type="radio"], .advanced-settings input[list] {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select, input[type="number"] {
+    width: calc(100% - 900px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"], .advanced-settings button {
+    background: #68cb2a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover, .advanced-settings button:hover {
+    background: #68cb2a;
+}
+
+.advanced-settings {
+    background: #e8f5e9;
+}
+
+.advanced-settings label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.advanced-settings .inline {
+    display: inline-block;
+    width: 48%;
+    margin-right: 2%;
+}
+
+.advanced-settings .inline:last-child {
+    margin-right: 0;
+}
+
+.advanced-settings h2 {
+    color: #68cb2a;
+}
+
+.advanced-settings h3 {
+    color: #68cb2a;
+}
+
+#text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#settings{
+    text-decoration: underline;
+    margin-top: 2%;
+}
+
+input{
+    width: 15%;
+}
+
+.radio-group{
+    display: inline;
+}
+
+button{
+    background: #68cb2a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+    padding: 7px;
+    margin-left: 40%;
+    margin-right: 40%;
+    transition: background 0.3s;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.mark{
+    margin-left: -5%;
+}
+
+
+
+
+.box {
+    width: 80%; 
+    height: 500px; 
+    background-color: white; 
+    border: 2px solid black; 
+    padding: 10px;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-y: auto; 
+}
+
+#content {
+    width: 100%;
+    height: 600px;
+    overflow-y: auto;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+.page-number {
+    text-align: right;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
