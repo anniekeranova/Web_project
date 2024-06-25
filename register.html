@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="css/mainStyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <div class="flex">
+            <div class="left">
+            <form action="php/register.php" target="_blank" method="post">
+                <label for="username">Потребителско име:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Парола:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Регистриране</button>
+            </form>
+            <p id="signIn">Вече имате акаунт? <a href="login.html">Вход тук</a>.</p>
+            </div>
+            <div class="right">
+                <img src="./images/login.png" alt="register">
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

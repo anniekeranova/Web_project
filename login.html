@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="css/mainStyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Вход</h1>
+    
+        <div class="flex">
+            <div class="left">
+                <form id="login-form">
+                    <label for="username">Потребителско име:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Парола:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Вход</button>
+                </form>
+                <p>Нямате акаунт? <a href="register.html">Регистрирайте се тук</a>.</p>
+            </div>
+            <div class="right">
+                <img src="./images/login.png" alt="login">
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
+

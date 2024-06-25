@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="css/convertDOCX.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx@6.0.2/build/index.min.js"></script>
+    <script src="js/convertDOCX.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Конвертиране на HTML в DOCX</h1>
+
+        <p id="text">Кликнете върху бутона "Избор на файл", за да прикачите файл:</p>
+
+        <form id="fileForm">
+            <input type="file" id="fileInput" name="filename" accept=".html" required>
+            <button id="submitHTML" type="submit">Качи файла</button>
+        </form>
+    
+    <h2>Съдържание на файла:</h2>
+    <div id="content"></div>
+    <div>
+        <h2>Допълнителни настройки (опционални)</h2>
+        <div id="options">
+            <h3 id="settings">Настройки на страницата</h3>
+            <label>Размер на страницата:</label>
+            <select id="pageSize">
+                <option value="Auto - one long page">Auto - one long page</option>
+                <option value="Letter">Letter</option>
+                <option value="Legal">Legal</option>
+                <option value="A4">A4</option>
+                <option value="A3">A3</option>
+                <option value="A2">A2</option>
+            </select>
+            <label>Ориентация на страницата:</label>
+            <select id="pageOrientation">
+                <option value="Portrait">Portrait</option>
+                <option value="Landscape">Landscape</option>
+            </select>
+            <label>Максимален брой символи на страницата:</label>
+            <input type="number" id="maxChars">
+            <label>Максимален брой думи на страницата:</label>
+            <input type="number" id="maxWords">
+            <div class="radio-group">
+                <label><input type="radio" name="pageNumberOption" value="show" id="showPageNumbers"> Show page numbers</label>
+                <label><input type="radio" name="pageNumberOption" value="remove" id="removePageNumbers"> Remove page numbers</label>
+            </div>
+            <div class="radio-group">
+                <label><input type="radio" name="lineNumberOption" value="show" id="showLineNumbers"> Show line numbers</label>
+                <label><input type="radio" name="lineNumberOption" value="remove" id="removeLineNumbers"> Remove line numbers</label>
+            </div>
+            <button id="applySettings" type="button">Генерирай DOCX</button>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <button id="downloadDocx" type="button">Изтегли като .docx</button>
+    </div>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="home.html">Назад</a></li>
+        </ul>
+    </nav>
+
+</div>
+</body>
+</html>
